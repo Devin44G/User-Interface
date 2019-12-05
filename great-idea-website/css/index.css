@@ -1,4 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +15,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +27,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +67,118 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/* Styling Nav */
+nav {
+	width: 100%;
+	top: 0;
+	padding-bottom: 20px;
+	text-align: center;
+	background: rgba(15, 196, 56, 0.8);
+	position: fixed;
+	z-index: 1;
+}
+nav a {
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 20px;
+	margin-right: 1%;
+}
+nav a:hover {
+	color: grey;
+}
+nav img {
+	margin-left: 5%;
+}
+
+/* Styling Header */
+html {
+	background-color: black;
+}
+body {
+	background: url(../img/header-img.png) no-repeat center bottom fixed;
+	background-size: 120%;
+}
+header {
+	margin-left: 50%;
+	padding-top: 100px;
+	width: 95%;
+	transform: translate(-50%);
+	text-align: center;
+}
+#header-left {
+	line-height: 100%;
+	font-size: 50px;
+	text-align: center;
+	margin-right: 2%;
+	color: white;
+}
+#header-left h1 {
+	letter-spacing: 3px;
+}
+#header-left a {
+	font-family: Bebas Neue;
+	text-decoration: none;
+	color: rgb(15, 196, 56);
+	border: double 5px rgb(15, 196, 56);
+	padding: 5px;
+	font-size: 30px;
+}
+#header-right {
+	width: 48.7%;
+}
+
+/* Styling Sections */
+.page {
+	width: 95%;
+	margin-left: 50%;
+	transform: translate(-50%);
+	background-color: lightgrey;
+}
+.section {
+	width: 95%;
+	margin: 30px 0 30px 50%;
+	transform: translate(-50%);
+}
+.section1 {
+	display: inline-block;
+	width: 48.7%;
+	text-align: left;
+}
+.section1 p {
+	text-align: justify;
+}
+.margin-correcting {
+	margin-right: 2%;
+}
+.middle-img {
+	width: 95%;
+	display: block;
+	margin: 0 auto 30px;
+}
+.section2 {
+	display: inline-block;
+	width: 31.6%;
+	text-align: left;
+}
+.section2 p {
+	text-align: justify;
+}
+.contact {
+	text-align: left;
+}
+.contact ul li {
+	margin-bottom: 20px;
+}
+
+hr {
+	width: 95%;
+	border: solid 1px black;
+	background: black;
+}
+
+/* Styling Footer */
+footer {
+	text-align: center;
+	padding-bottom: 30px;
+}
